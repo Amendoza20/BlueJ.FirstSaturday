@@ -57,7 +57,7 @@ public class WriteLoopsTest
     public void TestStartAtTwentyOne()
     {
         WriteLoops writeLoo1 = new WriteLoops();
-        assertEquals(11, writeLoo1.startAtTwentyOne());
+        assertEquals(21, writeLoo1.startAtTwentyOne());
     }
 
     @Test
@@ -71,7 +71,7 @@ public class WriteLoopsTest
     public void Test2to32()
     {
         WriteLoops writeLoo1 = new WriteLoops();
-        assertEquals(0, writeLoo1.byTwoTo32());
+        assertEquals(16, writeLoo1.byTwoTo32());
     }
 
     @Test
@@ -123,6 +123,19 @@ public class WriteLoopsTest
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(3, writeLoo1.checkServerStatus());
+    }
+    
+    @Test
+    public void TestJunior()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(3, writeLoo1.manageYardAndJunior());
+    }
+    @Test
+    public void TestFoo()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.foo());
     }
 }
 
